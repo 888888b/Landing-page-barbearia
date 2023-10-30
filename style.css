@@ -32,6 +32,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .all>img {
@@ -107,7 +108,7 @@ button:hover {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url("img/img-header.jpg") no-repeat fixed center center;
+  background: url("img/1400px.jpg") no-repeat fixed center center;
   background-size: cover;
   z-index: -1;
   opacity: .8;
@@ -184,15 +185,17 @@ h2 {
   font-size: 2.6em;
   font-weight: 600;
   color: #f7f7ff;
+  text-align: center;
 }
 
 .conteudo-titulo>p {
   max-width: 900px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   line-height: 150%;
   font-size: 1.3em;
   font-weight: 500;
+  padding: 0px 20px;
   font-family: "Poppins", sans-serif;
   color: #d9d9d9;
 }
@@ -210,7 +213,6 @@ section {
 
 .section-divs {
   width: 50%;
-  max-height: 750px;
   border: none;
 }
 
@@ -222,18 +224,19 @@ section {
 }
 
 #section-text-ajustar {
-  width: 70%;
+  width: 80%;
   min-height: 400px;
   height: 100%;
   padding: 10px 60px 10px 10px;
 }
 
 #section-text-ajustar>p {
-  margin: 40px 0px 30px 0px;
+  margin: 30px 0px;
   font-weight: 500;
   font-size: 1.3rem;
   color: #d9d9d9;
   line-height: 150%;
+  text-align: start;
 }
 
 #cliente {
@@ -249,11 +252,9 @@ section {
   align-items: center;
 }
 
-#section-image>img {
+#ajusta-imagem>img {
   width: 100%;
-  min-width: 600px;
   height: 100%;
-  max-height: 450px;
   opacity: 0.9;
 }
 
@@ -354,7 +355,6 @@ footer{
 }
 
 #div-creditos-imagens{
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,12 +400,12 @@ h4 {
 }
 
 .copyright{
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 100px;
 }
 
 .copyright > p{
@@ -428,6 +428,278 @@ h4 {
   color: #d9d9d9;
 }
 
+#nome-cliente{
+  text-align: initial;
+  font-size: 2.2em;
+}
+
+#ajusta-imagem{
+  width: 100%;
+}
+
+/*Media quarries*/
+
+@media screen and (max-width: 1100px){
+  .all{
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  #section-text-ajustar > p{
+    margin: 30px 0px;
+  }
+  
+  #section-text{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #section-image{
+    width: 55%;
+  }
+
+  #section-text-ajustar{
+    width: 100%;
+    padding: 0px 10px 0px 20px;
+  }
+  
+  #section-text-ajustar > p{
+    font-size: 1.3em;
+  }
+
+  #div-cortes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .copyright{
+    width: 100%;
+    padding: 0px 20px;
+  }
+  
+  .copyright > p{
+    font-size: 1.2em;
+  }
+
+  #titulo-creditos{
+    font-size: 2.1em;
+  }
+
+  h4{
+    font-size: 1.2em;
+  }
+
+  #nome-cliente{
+    font-size: 2em;
+  }
+}
+
+
+/*Ate 850px*/
+
+@media screen and (max-width: 850px) {
+
+  button{
+    padding: 5px 15px;
+  }
+
+  #section-avaliaçao{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  #section-text{
+    width: 100%;
+  }
+
+  #section-text-ajustar{
+    width: 85%;
+    padding-right: 50px;
+  }
+
+  #section-image{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+  }
+
+  #ajusta-imagem{
+    width: 100%;
+    min-width: 500px;
+  }
+}
+
+
+
+/* Ate 790px */
+
+@media screen and (max-width: 790px) {
+
+  .all{
+    padding: 0px 30px;
+  }
+
+  button{
+    display: none;
+  }
+  
+  .titulo{
+    font-size: 2.5em;
+  }
+
+  .titulo2{
+    font-size: 2.5em;
+  }
+
+}
+
+/* Ate 700px */
+
+@media screen and (max-width: 650px){
+
+  .titulo{
+    font-size: 2.4em;
+  }
+
+  .conteudo-titulo > p{
+    font-size: 1.3em;
+    padding: 0px 30px;
+  }
+
+  #section-text-ajustar{
+    width: 90%;
+    padding-right: 20px;
+  }
+}
+
+
+/* Ate 500px */
+
+@media screen and (max-width: 600px) {
+  
+  .all{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+  }
+
+  .conteudo-titulo {
+    padding: 50px 0px;
+  }
+
+  #img-fundo:before{
+    background: url("img/610px.jpg") no-repeat center center;
+    opacity: 0.7;
+  }
+
+  #nav{
+    margin-top: 10px;
+  }
+
+  #nav > a{
+    font-size: 1.3em;
+  }
+
+  #img-fundo{
+    padding: 0px 15px;
+  }
+
+  #nav2 > a{
+    font-size: 1.3em;
+  }
+
+  #nav2 > h3{
+    font-size: 1.6em;
+  }
+
+  .conteudo-titulo > p{
+    max-width: 90%;
+    font-size: 1.3em;
+    padding: 0px 5px 0px 30px;
+    text-align: start;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .conteudo-titulo > h1{
+    padding: 0px 20px;
+  } 
+
+  #cliente{
+    font-size: 1.2em;
+  }
+
+  #section-text{
+    padding: 0px 30px 20px 30px;
+  }
+
+  #section-text-ajustar{
+    width: 100%;
+    padding: 0px 20px 0px 10px;
+  }
+
+  #section-text-ajustar > p{
+    font-size: 1.2em;
+  }
+  
+  .titulo2{
+    font-size: 2.3em;
+  }
+
+  .cortes-text > h3{
+    font-size: 2em;
+  }
+
+  .cortes-text > p{
+    padding: 0px 10px;
+    font-size: 1.1em
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .copyright > p{
+    margin: 20px 0px 5px 0px;
+    font-size: 1.1em;
+    padding: 0px 5px;
+    text-align: center;
+  }
+}
+
+/*Ate 500px*/
+
+@media screen and (max-width: 500px) {
+
+  header{
+    overflow: hidden;
+  }
+  
+  #img-fundo:before{
+    background: url("img/originial.jpg") no-repeat center center;
+    opacity: 0.7;
+  }
+
+  #titulo-creditos{
+    font-size: 2em;
+    text-align: center;
+  }
+
+  h4{
+    font-size: 1.1em;
+  }
+
+  #linha-credito{
+    margin-bottom: 15px;
+  }
+}
 
 
 
