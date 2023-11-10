@@ -26,12 +26,12 @@ header {
 .all {
   width: 90%;
   max-width: 1000px;
-  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 5px;
   overflow: hidden;
 }
 
@@ -39,6 +39,7 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 100%;
+  overflow: hidden;
 }
 
 #div-nav {
@@ -75,7 +76,7 @@ header {
 button {
   padding: 5px 30px;
   background-color: black;
-  border: 3px solid gray;
+  border: 2px solid gray;
   color: white;
   font-size: 1.6em;
   font-weight: 500;
@@ -85,7 +86,7 @@ button {
 }
 
 button:hover {
-  border: 3px solid #f7f7ff;
+  border: 2px solid #f7f7ff;
   transform: scale(1.1);
 }
 
@@ -586,7 +587,12 @@ h4 {
   .all{
     display: flex;
     flex-direction: column;
-    padding: 5px 0px;
+    padding: 5px 0px 0px 0px;
+    max-height: 300px;
+  }
+
+  .all img{
+    margin-bottom: 10px;
   }
 
   .conteudo-titulo {
@@ -596,10 +602,6 @@ h4 {
   #img-fundo:before{
     background: url("img/610px.jpg") no-repeat center center;
     opacity: 0.7;
-  }
-
-  #nav{
-    margin-top: 10px;
   }
 
   #nav > a{
