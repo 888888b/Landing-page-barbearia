@@ -25,18 +25,18 @@ header {
 
 .all {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1050px;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 5px 20px;
   overflow: hidden;
 }
 
 .all>img {
-  width: 150px;
+  width: 160px;
   height: 150px;
   border-radius: 100%;
   overflow: hidden;
@@ -65,6 +65,8 @@ header {
   transition: all .1s ease-out;
   padding-bottom: 5px;
   border-bottom: 3px solid black;
+  text-decoration: none;
+  outline: none;
 }
 
 #nav > a:hover {
@@ -385,12 +387,15 @@ h4 {
   font-weight: 500;
   font-size: 1.1em;
   color: #f7f7ff;
-  transition: all .1s ease-in-out;
+  margin-left: 10px;
+  transition: all .2s ease-out;
 }
 
 .link-creditos:hover{
+  display: inline-block;
   text-decoration: underline;
   color: #d62246;
+  transform: scale(1.2);
 }
 
 #div-footer-2{
@@ -425,9 +430,11 @@ h4 {
   padding: 10px 0px;
 }
 
+
 .fa{
   color: #d9d9d9;
 }
+
 
 #nome-cliente{
   text-align: initial;
@@ -443,7 +450,7 @@ h4 {
 @media screen and (max-width: 1100px){
   .all{
     width: 100%;
-    padding: 0px 20px;
+    padding: 5px 20px;
   }
 
   #section-text-ajustar > p{
@@ -498,7 +505,7 @@ h4 {
 }
 
 
-/*Ate 850px*/
+
 
 @media screen and (max-width: 850px) {
 
@@ -538,12 +545,11 @@ h4 {
 
 
 
-/* Ate 790px */
 
 @media screen and (max-width: 790px) {
 
   .all{
-    padding: 0px 30px;
+    padding: 5px 30px;
   }
 
   button{
@@ -560,7 +566,8 @@ h4 {
 
 }
 
-/* Ate 700px */
+
+
 
 @media screen and (max-width: 650px){
 
@@ -580,7 +587,6 @@ h4 {
 }
 
 
-/* Ate 500px */
 
 @media screen and (max-width: 600px) {
   
@@ -676,7 +682,8 @@ h4 {
   }
 }
 
-/*Ate 500px*/
+
+
 
 @media screen and (max-width: 500px) {
 
