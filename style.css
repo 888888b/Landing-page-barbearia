@@ -618,7 +618,6 @@ h4 {
 
   #img-fundo:before{
     background: url("img/600px.jpg") no-repeat center center;
-    opacity: 0.7;
     background-size: cover;
   }
 
