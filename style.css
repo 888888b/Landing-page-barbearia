@@ -13,6 +13,10 @@ html {
   font-family: "Noto Sans", sans-serif;
 }
 
+body{
+  background-color: black;
+}
+
 header {
   width: 100%;
 }
@@ -33,6 +37,7 @@ header {
   align-items: center;
   padding: 5px 20px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .all>img {
@@ -100,20 +105,14 @@ button:hover {
   align-items: center;
   position: relative;
   z-index: 1;
-  background-color: black;
+  background: url("img/600px.jpg") no-repeat top center fixed;
+  background-size: cover;
 }
 
-#img-fundo:before {
-  content: "";
+#img-fundo img{
   width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: url("img/600px.jpg") no-repeat fixed center center;
-  background-size: cover;
-  z-index: -1;
-  opacity: .8;
+  height: 100%;
+  object-fit: cover;
 }
 
 #ajustar-nav {
@@ -285,6 +284,10 @@ section {
   gap: 1.5rem;
 }
 
+#section-cortes-titulo h1{
+  font-size: 2.5em;
+}
+
 .cortes {
   width: 300px;
   display: flex;
@@ -323,7 +326,7 @@ section {
 }
 
 .cortes-text > h3{
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 600;
   text-align: center;
   color: #f7f7ff;
@@ -398,7 +401,7 @@ h4 {
 
 #div-footer-2{
   display: flex;
-  padding: 20px 0px;
+  padding: 10px 0px;
   justify-content: center;
   background-color: #1C1C1C;
 }
@@ -419,7 +422,7 @@ h4 {
 }
 
 #nav-icons > a{
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 #nav-icons{
@@ -503,18 +506,25 @@ h4 {
   }
 }
 
-
-
+@media screen and (max-width: 950px){
+  button{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 850px) {
 
-  button{
-    padding: 5px 15px;
+  .all{
+    margin-bottom: 30px;
   }
 
   .all img{
     width: 140px;
     height: 130px;
+  }
+
+  #img-fundo{
+    opacity: .9;
   }
 
   .conteudo-titulo{
@@ -525,6 +535,11 @@ h4 {
     max-width: 100%;
     font-weight: 400;
     font-size: 1.2em;
+  }
+
+  #img-fundo{
+    background: url("img/600px.jpg") no-repeat center center;
+    background-size: cover;
   }
 
   #section-avaliaçao{
@@ -606,6 +621,7 @@ h4 {
     flex-direction: column;
     padding: 5px 0px 0px 0px;
     max-height: 300px;
+    margin-bottom: 0px;
   }
 
   .all img{
@@ -614,11 +630,6 @@ h4 {
 
   .conteudo-titulo {
     padding: 50px 0px;
-  }
-
-  #img-fundo:before{
-    background: url("img/600px.jpg") no-repeat center center;
-    background-size: cover;
   }
 
   #nav > a{
